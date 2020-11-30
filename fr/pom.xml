@@ -11,11 +11,11 @@
 
 
 	<groupId>org.vivoweb</groupId>
-	<artifactId>vitro-languages-fr_FR</artifactId>
+	<artifactId>vitro-languages-fr</artifactId>
 	<version>1.11.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Vitro Languages fr_FR</name>
+	<name>Vitro Languages for fr</name>
 	<description>Vitro Languages</description>
 	<url>http://vivoweb.org/</url>
 
