@@ -1,17 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
-
+    <parent>
+        <groupId>org.vivoweb</groupId>
+        <artifactId>vitro-languages</artifactId>
+        <version>1.11.2-SNAPSHOT</version>
+    </parent>
     <groupId>org.vivoweb</groupId>
-    <artifactId>vitro-languages</artifactId>
+    <artifactId>vitro-languages-fr</artifactId>
     <version>1.11.2-SNAPSHOT</version>
     <packaging>pom</packaging>
-
-    <name>Vitro Languages</name>
+    <name>Vitro Languages for fr</name>
     <description>Vitro Languages</description>
     <url>http://vivoweb.org/</url>
-
     <licenses>
         <license>
             <name>BSD 3-Clause License</name>
@@ -19,7 +20,6 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-
     <developers>
         <developer>
             <name>Graham Triggs</name>
@@ -39,14 +39,7 @@
             <organization>Cornell University</organization>
             <organizationUrl>https://github.com/fereira</organizationUrl>
         </developer>
-        <developer>
-            <name>Michel Héon</name>
-            <email>heon.michel@uqam.ca</email>
-            <organization>Université du Québec à Montréal</organization>
-            <organizationUrl>https://github.com/uqam-sb</organizationUrl>
-        </developer>
     </developers>
-
     <!-- The SCM repository location is used by Continuum to update against 
         when changes have occurred. This spawns a new build cycle and releases snapshots 
         into the snapshot repository below. -->
@@ -56,7 +49,6 @@
         <url>git@github.com:vivo-project/Vitro-languages.git</url>
         <tag>HEAD</tag>
     </scm>
-
     <properties>
         <vitro-version>${project.version}</vitro-version>
         <vivo-dir>${basedir}</vivo-dir>
@@ -66,8 +58,6 @@
         <stagingBase>/</stagingBase>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-
     <profiles>
         <profile>
             <id>release-sign-artifacts</id>
@@ -141,7 +131,6 @@
             </build>
         </profile>
     </profiles>
-
     <build>
         <pluginManagement>
             <plugins>
@@ -191,7 +180,6 @@
             </plugins>
         </pluginManagement>
     </build>
-
     <distributionManagement>
         <site>
             <id>vivo-project</id>
@@ -207,13 +195,6 @@
         </repository>
     </distributionManagement>
     <modules>
-        <module>core</module>
-        <module>en_CA</module>
-        <module>en_US</module>
-        <module>es</module>
-        <module>fr_CA</module>
-        <module>fr</module>
-        <module>pt_BR</module>
-        <module>de_DE</module>
+        <module>webapp</module>
     </modules>
 </project>
